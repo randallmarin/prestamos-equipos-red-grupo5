@@ -4,5 +4,6 @@ module pe.edu.uni.fiee.prestamosequiposredgrupo5 {
 
 
     opens pe.edu.uni.fiee.prestamosequiposredgrupo5 to javafx.fxml;
+    opens pe.edu.uni.fiee.prestamosequiposredgrupo5.usuarios to javafx.fxml;
     exports pe.edu.uni.fiee.prestamosequiposredgrupo5;
 }
