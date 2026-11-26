@@ -3,6 +3,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
@@ -12,7 +14,7 @@
       alignment="CENTER"
       spacing="15"
       prefWidth="500"
-      prefHeight="420">
+      prefHeight="600">
 
     <padding>
         <Insets top="25" right="30"
@@ -50,5 +52,29 @@
     <Label fx:id="mensajeEstado"
            wrapText="true"
            maxWidth="320"/>
+
+    <Label text="ESTUDIANTES REGISTRADOS"
+           style="-fx-font-size: 14px;
+              -fx-font-weight: bold;"/>
+
+    <TableView fx:id="tablaEstudiantes"
+               prefHeight="180"
+               maxWidth="440">
+
+        <columns>
+            <TableColumn fx:id="columnaCodigo"
+                         text="Código universitario"
+                         prefWidth="150"/>
+
+            <TableColumn fx:id="columnaNombres"
+                         text="Nombres"
+                         prefWidth="140"/>
+
+            <TableColumn fx:id="columnaApellidos"
+                         text="Apellidos"
+                         prefWidth="145"/>
+        </columns>
+
+    </TableView>
 
 </VBox>
